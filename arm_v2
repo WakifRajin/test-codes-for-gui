@@ -33,7 +33,7 @@ class ArmCommandPublisher(Node):
         msg = String()
         msg.data = json.dumps(command)
         self.publisher_.publish(msg)
-        self.get_logger().info(f'Published: {msg.data}')
+        self.get_logger().info(f'{msg.data}')
 
 class DetachedPlotWindow(QMainWindow):
     def __init__(self, gui):
@@ -131,7 +131,7 @@ class ArmControlGUI(QMainWindow):
         control_panel.setAlignment(Qt.AlignTop)
 
         # Add ROS2 connection status
-        self.status_label = QLabel("🟢 ROS2 Node Active")
+        self.status_label = QLabel("🟢 ROS Connected")
         self.status_label.setStyleSheet("font-weight: bold; padding: 5px; color: green;")
         control_panel.addWidget(self.status_label)
         
