@@ -1,3 +1,40 @@
+'''
+CHANGED CONTROLS OVERVIEW (pls check with gamepad and remap if the buttons dont work accordingly)
+
+Base Motor: Left stick
+  Left : Base forward
+  Right : Base backward
+  Centered: Base stop
+
+Shoulder Motor: 
+  Y: Shoulder up (forward)
+  A: Shoulder down (backward)
+  Neither pressed: Shoulder stop
+
+Elbow Motor: Left stick
+  Up : Elbow up (forward)
+  Down : Elbow down (backward)
+  Centered: Elbow stop
+
+(Kept all other gamepad mappings the same as before)
+
+RT/LT: Adjust shared PWM
+RB/LB: Adjust wrist servo
+D-pad: Control gripper and roller
+L/R buttons: Stop gripper/roller
+
+START: Reset all controls
+
+BACK : Switch between ARM and WHEEL control profile
+(wheel control is same as before)
+
+WHEEL CONTROLS:
+Right Stick Left to Right: Speed control
+Left Stick: Steer
+START: Reset/Stop
+
+'''
+
 import sys
 import json
 import numpy as np
