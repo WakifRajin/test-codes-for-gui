@@ -1,0 +1,25 @@
+{
+    "arm_control": {
+        "shared_pwm_increase": {"type": "button", "index": 7},
+        "shared_pwm_decrease": {"type": "button", "index": 6},
+        "wrist_servo_increase": {"type": "button", "index": 5},
+        "wrist_servo_decrease": {"type": "button", "index": 4},
+        "base_motor": {"type": "axis", "index": 0, "deadzone": 0.2},
+        "elbow_motor": {"type": "axis", "index": 1, "deadzone": 0.2},
+        "shoulder_motor": {"type": "hat", "index": 0, "axis": "vertical"},
+        "gripper_open": {"type": "hat", "index": 0, "axis": "horizontal", "direction": 1},
+        "gripper_close": {"type": "hat", "index": 0, "axis": "horizontal", "direction": -1},
+        "gripper_stop": {"type": "button", "index": 10},
+        "roller_open": {"type": "button", "index": 3},
+        "roller_close": {"type": "button", "index": 1},
+        "roller_stop": {"type": "button", "index": 2}
+    },
+    "wheel_control": {
+        "speed_control": {"type": "axis", "index": 3},
+        "direction_control": {"type": "axis", "axes": [0, 1], "deadzone": 0.2}
+    },
+    "global": {
+        "toggle_profile": {"type": "button", "index": 8},
+        "kill_switch": {"type": "button", "index": 9}
+    }
+}
